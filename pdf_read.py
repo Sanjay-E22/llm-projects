@@ -7,6 +7,7 @@ from langchain.chains import RetrievalQA
 
 
 # 1. Load and Split
+
 loader = PyPDFLoader("my pdf")
 docs = loader.load()
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
