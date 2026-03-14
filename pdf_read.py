@@ -3,11 +3,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
-from langchanin
+
 
 
 # 1. Load and Split
-loader = PyPDFLoader("your_data.pdf")
+loader = PyPDFLoader("my pdf")
 docs = loader.load()
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 chunks = splitter.split_documents(docs)
