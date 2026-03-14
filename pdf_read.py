@@ -6,6 +6,8 @@ from langchain.chains import RetrievalQA
  
 
 
+
+
 # 1. Load and Split
 loader = PyPDFLoader("my pdf")
 docs = loader.load()
